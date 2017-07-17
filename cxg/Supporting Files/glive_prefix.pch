@@ -1,0 +1,52 @@
+//
+//  glive_prefix.pch
+//  cxg
+//
+//  Created by abc on 16/10/13.
+//  Copyright © 2016年 changyou. All rights reserved.
+//
+
+#ifndef glive_prefix_pch
+#define glive_prefix_pch
+
+#ifdef __OBJC__
+
+    #import <Availability.h>
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #ifndef __IPHONE_8_0
+    #warning "This project uses features only available in iOS SDK 8.0 and later."
+    #endif
+#endif
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define FUIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define STR_NOT_NULL(x) ([(x) length]!=0&&![(x) isEqualToString:@"(null)"])
+#define SafeString(x) [(x) length]>0?(x):@""
+
+#define IS_IOS_9_OR_LATER ([[[UIDevice currentDevice] systemVersion] doubleValue]>=9.0)?YES:NO
+#define IS_IOS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] doubleValue]>=8.0)?YES:NO
+
+#define SCREEN_W [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_H [[UIScreen mainScreen] bounds].size.height
+
+#define UI_IS_IPHONE            ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define UI_IS_IPHONE4           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height < 568.0)
+#define UI_IS_IPHONE5           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define UI_IS_IPHONE6           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define UI_IS_IPHONE6PLUS       (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0)
+
+//====================项目内常量=====================
+#define LOGIN_LABEL_H       42
+#define GENERAL_BTN_H       42
+
+#define GENERAL_TABLE_CELL_H    52
+#define GENERAL_HEADICON_SIZE   40
+//=================================================
+
+
+#endif /* glive_prefix_pch */

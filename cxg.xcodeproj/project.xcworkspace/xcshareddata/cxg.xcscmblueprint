@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2ac24096-6f8a-4667-a04e-dd5c36472e5e++7971" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2ac24096-6f8a-4667-a04e-dd5c36472e5e++7971" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "951F1CC5-B5C3-449D-8AA1-44F6F4FAAF67",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2ac24096-6f8a-4667-a04e-dd5c36472e5e++7971" : "..\/..\/Downloads\/%E5%A4%A9%E9%BE%99%E7%A7%80%E5%9C%BA%E7%89%88%E6%9C%AC\/cyou_v2.4.14"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cxg",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cxg.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.2.6.11\/as\/anquan",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2ac24096-6f8a-4667-a04e-dd5c36472e5e++7971"
+    }
+  ]
+}
